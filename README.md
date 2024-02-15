@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://i.imgur.com/2GDGZJ6.png" alt="Logo do projeto" width="100%" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🖥️ Projeto
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação web para criar e gerenciar notas. Permite aos usuários cadastrar notas, tanto em texto quanto em áudio, utilizando a funcionalidade de reconhecimento de voz.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Gestão de Notas: Crie, salve e exclua notas dinamicamente.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologia
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Este projeto utiliza as seguintes tecnologias:
 
-- Configure the top-level `parserOptions` property like this:
+- React: Biblioteca JavaScript para construção de interfaces de usuário.
+- TypeScript: Superset tipado de JavaScript.
+- localStorage: API do navegador para armazenamento local de dados.
+- SpeechRecognition API: API do navegador para reconhecimento de voz.
+- Tailwind CSS: Framework CSS para desenvolvimento de interfaces responsivas e modernas.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🏷️ Layout
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+O layout do projeto foi inspirado no seguinte modelo do Figma:
+
+[Layout do Projeto](https://www.figma.com/community/file/1336456128647909148/nlw-expert-notes)
+
+
+## 📝 Funcionalidades
+
+- **Criação de Notas:** Permite aos usuários criar novas notas, seja digitando texto ou gravando um áudio.
+- **Exclusão de Notas:** Permite aos usuários excluir notas existentes.
+- **Pesquisa de Notas:** Oferece aos usuários a capacidade de pesquisar notas por conteúdo.
+
+
+- ## 📝 Persistência de Dados
+- Os dados das notas são persistidos localmente no navegador, utilizando a funcionalidade de armazenamento local (localStorage).
+
